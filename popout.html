@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <form class="form sign-in">
+        <h2>Sign In</h2>
+        <label>
+            <span>User Name</span>
+            <input type="name" name="user name" id="user">
+        </label>
+        <label>
+            <span>Password</span>
+            <input type="password" name="password">
+        </label>
+        <button class="submit non-modal" id="submit">Sign In</button>
+        <p class="forgot-pass">Forgot Password ?</p>
+
+        <div class="social-media">
+            <ul>
+                <li><img src="https://raw.githubusercontent.com/abo-elnoUr/public-assets/master/facebook.png"></li>
+                <li><img src="https://raw.githubusercontent.com/abo-elnoUr/public-assets/master/twitter.png"></li>
+                <li><img src="https://raw.githubusercontent.com/abo-elnoUr/public-assets/master/linkedin.png"></li>
+                <li><img src="https://raw.githubusercontent.com/abo-elnoUr/public-assets/master/instagram.png"></li>
+            </ul>
+        </div>
+    </form>
+
+    <div class="login-page">
+        <h2 id="user-hello"></h2>
+        <button class="logout non-modal" type="button" id="logout">Log Out</button>
+    </div>
+
+    <div id="overlay"></div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,205 @@
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+input,
+button {
+    border: none;
+    outline: none;
+    background: none;
+}
+
+
+.form {
+    position: relative;
+    width: 400px;
+    padding: 50px 30px;
+    -webkit-transition: -webkit-transform 1.2s ease-in-out;
+    transition: -webkit-transform 1.2s ease-in-out;
+    transition: transform 1.2s ease-in-out;
+    transition: transform 1.2s ease-in-out, -webkit-transform 1.2s ease-in-out;
+}
+
+h2 {
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    width: 260px;
+    margin: 25px auto 0;
+    text-align: center;
+}
+
+label span {
+    font-size: 14px;
+    font-weight: 600;
+    color: #505f75;
+    text-transform: uppercase;
+}
+
+input {
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    font-size: 16px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(109, 93, 93, 0.4);
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+}
+
+.non-modal {
+    display: block;
+    margin: 0 auto;
+    width: 260px;
+    height: 36px;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.submit {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'Nunito', sans-serif;
+    background: -webkit-linear-gradient(left, #7579ff, #b224ef);
+}
+
+.submit:hover {
+    background: -webkit-linear-gradient(left, #b224ef, #7579ff);
+}
+
+.logout {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'Nunito', sans-serif;
+    background: -webkit-linear-gradient(left, #00d4ff, #090979);
+}
+
+.logout:hover {
+    background: -webkit-linear-gradient(left, #090979, #00d4ff);
+}
+
+.forgot-pass {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: #0c0101;
+    cursor: pointer;
+}
+
+.forgot-pass:hover {
+    color: red;
+}
+
+.social-media {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-media ul {
+    list-style: none;
+}
+
+.social-media ul li {
+    display: inline-block;
+    cursor: pointer;
+    margin: 25px 15px;
+}
+
+.social-media img {
+    width: 40px;
+    height: 40px;
+}
+
+.login-page {
+    display: none;
+    width: 400px;
+    padding: 50px 30px;
+}
+
+.overlay {
+    display: block;
+    background: rgba(0, 0, 0, 0.4);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.overlay .modal__locked {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: 210px;
+    background: white;
+    border-radius: 20px;
+}
+
+.overlay .modal__locked .modal-body {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+}
+
+.overlay .modal__locked .modal-body center {
+    margin: 20px;
+}
+
+.overlay .modal__locked .modal-body center strong {
+    font-size: 15px;
+    position: relative;
+    top: -30px;
+}
+
+.overlay .modal__locked .modal-body center p {
+    position: relative;
+    top: -10px;
+    font-size: 13px;
+}
+
+.overlay .modal__locked .modal-buttons {
+    position: absolute;
+    bottom: 30px;
+    right: 10px;
+}
+
+.btn {
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+    width: 145px;
+    height: 45px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    margin: 0 10px;
+    color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.overlay .modal__locked .modal-buttons button.btn-purple {
+    background: rgba(150, 39, 234, 1);
+    color: white;
+}

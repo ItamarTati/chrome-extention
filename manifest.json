@@ -1,12 +1,24 @@
 {
-    "manifest_version": 2,
-    "name": "Login Page",
-    "version": "0.1.0",
-    "content_scripts": [
-      {
-        "matches": ["<all_urls>"],
-        "js": ["script.js"],
-        "css": ["styles.css"]
-      }
-    ]
-  }
+  "manifest_version": 2,
+  "name": "Login Page",
+  "version": "0.1.0",
+  "description": "You can Login using this extention",
+  "icons": {
+    "16": "icons8-fill-in-form-48.png",
+    "48": "icons8-fill-in-form-48.png",
+    "128": "icons8-fill-in-form-48.png"
+  },
+  "browser_action": {
+    "default_icon": "icons8-fill-in-form-48.png",
+    "default_popup": "popout.html",
+    "default_title": "Login Page"
+  },
+  "permissions": [
+    "activeTab",
+    "clipboardWrite",
+    "<all_urls>",
+    "Tab",
+    "idle"
+  ],
+  "content_security_policy": "script-src 'self' https://www.gstatic.com/ https://*.firebaseio.com https://www.googleapis.com; object-src 'self'"
+}
